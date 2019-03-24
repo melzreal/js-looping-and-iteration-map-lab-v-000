@@ -5,10 +5,19 @@ function lowerCaseDrivers(arrayTo){
 }
 
 function nameToAttributes(names){
- const newObj = { names.map(firstName,lastName) };
+ const newObj = names.map(function(name){
+   const firstName = name.split(' ')[0];
+   const LastName = name.split(' ')[0];
+
+
+ });
+
+
 
 }
 
-function attributesToPhrase(){
-
+function attributesToPhrase(people){
+  return people.map(function(person) {
+      return `${person.name} is from ${person.hometown}`;
+    });
 }
